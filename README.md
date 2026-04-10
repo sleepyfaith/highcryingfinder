@@ -4,7 +4,7 @@ a kotlin program that finds coordinates generating ruined portals with high cryi
 
 ## usage
 
-download the `.jar` from [releases](https://github.com/sleepyfaith/highcryingfinder/releases), then run: `java -jar highcryingfinder.jar`
+download the `.jar` from [releases](https://github.com/sleepyfaith/highcryingfinder/releases), then run: `java -jar highcryingfinder.jar <option>=<value>`
 
 ### options
 
