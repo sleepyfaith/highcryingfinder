@@ -58,3 +58,4 @@ fun chunkCount(radius: Int): Long {
     val axis = ((radius * 2)) + 1
     return axis.toLong() * axis
 }
+fun Long.formatWithUnderscores(): String = "%,d".format(this).replace(',', '_')

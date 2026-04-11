@@ -5,8 +5,6 @@ import kotlinx.coroutines.joinAll
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import java.io.File
-import java.util.concurrent.atomic.AtomicLong
-import kotlin.math.pow
 
 val RESULTS_FILE = File("results.txt")
 
@@ -34,6 +32,11 @@ fun main(args: Array<String>) = runBlocking {
     )
 
     println("expected hits: ${formatLarge(expectedHits)}")
+
+    val requiredRadius = ((kotlin.math.sqrt(1.0 / (p * (Args.Y_MAX - Args.Y_MIN) * transformData.transforms.size)) - 1.0) / 2.0).toLong()
+
+    println("radius for 1 expected hit: ${requiredRadius.formatWithUnderscores()}")
+    if (requiredRadius > 1_875_000) println("WARNING: radius for 1 expected hit extends past the world border!")
 
     val startTime = System.currentTimeMillis()
 
