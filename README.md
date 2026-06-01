@@ -15,7 +15,7 @@ download the `.jar` from [releases](https://github.com/sleepyfaith/highcryingfin
 | `yMin` | int | `15` | minimum y level |
 | `yMax` | int | `85` | maximum y level |
 | `threads` | int | `4` | thread count |
-| `minCrying` | int | `10` | minimum crying obsidian |
+| `minCrying` | int | `11` | minimum crying obsidian |
 
 ## build
 
